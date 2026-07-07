@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Grupo VIP de Ofertas</title>
+
+<meta http-equiv="refresh" content="3;url=https://chat.whatsapp.com/GY3JAhNFMH10STpW7Bt6UF">
+
+<style>
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f5f5f5;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    margin:0;
+}
+
+.card{
+    background:white;
+    width:360px;
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+h1{
+    color:#25D366;
+}
+
+button{
+    background:#25D366;
+    color:white;
+    border:none;
+    padding:15px 25px;
+    font-size:18px;
+    border-radius:10px;
+    cursor:pointer;
+    width:100%;
+}
+
+button:hover{
+    background:#1fa855;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>🎉 Grupo VIP de Ofertas</h1>
+
+<p>
+Até <strong>40% OFF</strong> em produtos para bebê.
+</p>
+
+<p>
+✅ Ofertas todos os dias<br>
+✅ Shopee<br>
+✅ Grupo gratuito
+</p>
+
+<a href="https://chat.whatsapp.com/GY3JAhNFMH10STpW7Bt6UF">
+<button>ENTRAR NO GRUPO</button>
+</a>
+
+<p style="margin-top:20px;font-size:12px;color:#777">
+Você será redirecionado automaticamente...
+</p>
+
+</div>
+
+</body>
+</html>
