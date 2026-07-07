@@ -16,7 +16,20 @@
     box-sizing:border-box;
     font-family:Arial,Helvetica,sans-serif;
 }
+    
+.timer-box{
+    margin:25px 0;
+    padding:20px;
+    background:linear-gradient(135deg,#ff6b00,#ff2d55);
+    color:#fff;
+    border-radius:15px;
+}
 
+#timer{
+    font-size:34px;
+    font-weight:bold;
+    margin-top:10px;
+}
 body{
     background:#f5f5f5;
     color:#333;
@@ -107,7 +120,32 @@ h1{
 </style>
 
 </head>
+<script>
+function updateTimer() {
+    const now = new Date();
+    const end = new Date();
 
+    end.setHours(23,59,59,999);
+
+    const diff = end - now;
+
+    if(diff <= 0){
+        document.getElementById("timer").innerHTML = "ENCERRADA";
+        return;
+    }
+
+    const h = Math.floor(diff / 1000 / 60 / 60);
+    const m = Math.floor((diff / 1000 / 60) % 60);
+    const s = Math.floor((diff / 1000) % 60);
+
+    document.getElementById("hours").innerText = String(h).padStart(2,"0");
+    document.getElementById("minutes").innerText = String(m).padStart(2,"0");
+    document.getElementById("seconds").innerText = String(s).padStart(2,"0");
+}
+
+updateTimer();
+setInterval(updateTimer,1000);
+</script>
 <body>
 
 <div class="container">
@@ -116,6 +154,15 @@ h1{
 
 <div class="badge">
 🔥 OFERTAS TODOS OS DIAS
+</div>
+    <div class="timer-box">
+    <h3>⏰ Promoções encerram hoje às 23:59</h3>
+
+    <div id="timer">
+        <span id="hours">00</span> :
+        <span id="minutes">00</span> :
+        <span id="seconds">00</span>
+    </div>
 </div>
 
 <h1>🛍️ Grupo VIP Amazon & Shopee</h1>
@@ -153,9 +200,11 @@ e cupons exclusivos diretamente no WhatsApp.
 <br>
 
 <a class="cta"
-href="https://chat.whatsapp.com/GY3JAhNFMH10STpW7Bt6UF">
+href="https://chat.whatsapp.com/GY3JAhNFMH10STpW7Bt6UF"
+target="_blank"
+rel="noopener noreferrer">
 
-ENTRAR NO GRUPO VIP
+🚀 ENTRAR NO GRUPO VIP
 
 </a>
 
